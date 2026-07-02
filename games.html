@@ -25,22 +25,235 @@
 
         <div class="actions">
           <button class="icon-btn" type="button" aria-label="Warenkorb">
-            &#128722;
+            <img
+              class="icon-image"
+              src="./assets/icons/basket-svgrepo-com.svg"
+              alt=""
+            />
           </button>
           <button class="icon-btn" type="button" aria-label="Favoriten">
-            &#9825;
+            <img
+              class="icon-image"
+              src="./assets/icons/favorite-svgrepo-com.svg"
+              alt=""
+            />
           </button>
           <div class="avatar" aria-label="Profil">AK</div>
         </div>
       </header>
 
-      <section class="page-panel">
-        <p class="page-kicker">Sammlung</p>
-        <h1>Spiele</h1>
-        <p>
-          Hier entsteht die Uebersicht fuer alle Spiele mit Kategorien,
-          Plattformen und Angeboten.
-        </p>
+      <section class="games-page">
+        <section class="games-hero">
+          <div class="games-hero-copy">
+            <p class="page-kicker">Sammlung</p>
+            <h1>Spiele fuer jeden Stil</h1>
+            <p class="games-lead">
+              Entdecke aktuelle Titel, Story-Abenteuer und Multiplayer-Hits in
+              einer kuratierten Auswahl fuer Konsole und PC.
+            </p>
+          </div>
+
+          <div class="games-stats" aria-label="Shop-Statistiken">
+            <article class="stat-card">
+              <strong>126</strong>
+              <span>Verfuegbare Spiele</span>
+            </article>
+            <article class="stat-card">
+              <strong>24</strong>
+              <span>Neue Angebote</span>
+            </article>
+            <article class="stat-card">
+              <strong>4,8/5</strong>
+              <span>Community-Wertung</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="game-toolbar" aria-label="Filter und Sortierung">
+          <div class="game-chips">
+            <button class="chip active" type="button">Alle</button>
+            <button class="chip" type="button">Action</button>
+            <button class="chip" type="button">Abenteuer</button>
+            <button class="chip" type="button">Strategie</button>
+            <button class="chip" type="button">PS5</button>
+            <button class="chip" type="button">PC</button>
+          </div>
+
+          <div class="sort-box">
+            <span>Sortieren nach</span>
+            <strong>Beliebtheit</strong>
+          </div>
+        </section>
+
+        <section class="games-grid" aria-label="Spielekatalog">
+          <article class="game-card">
+            <div class="game-card-media">
+              <img
+                class="media-image"
+                src="./assets/images/horizon-zero-dawn-3840x2160-19141.jpg"
+                alt="Horizon Forbidden West"
+              />
+            </div>
+            <div class="game-card-copy">
+              <div class="game-card-top">
+                <span class="game-tag">PS5</span>
+                <span class="game-meta">Open World</span>
+              </div>
+              <h2>Horizon Forbidden West</h2>
+              <p>
+                Erkunde eine riesige Welt, sammle Ausruestung und stelle dich
+                mechanischen Kreaturen.
+              </p>
+              <div class="game-card-footer">
+                <div>
+                  <span class="game-price-label">Ab</span>
+                  <strong class="game-price">$59</strong>
+                </div>
+                <button class="buy-btn" type="button">Kaufen</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card-media">
+              <img
+                class="media-image"
+                src="./assets/images/marvels-spider-man-3840x2160-11990.jpeg"
+                alt="Marvel's Spider-Man"
+              />
+            </div>
+            <div class="game-card-copy">
+              <div class="game-card-top">
+                <span class="game-tag">PS5</span>
+                <span class="game-meta">Action</span>
+              </div>
+              <h2>Marvel's Spider-Man</h2>
+              <p>
+                Schnelles Traversal, cineastische Kaempfe und eine dichte
+                Superhelden-Atmosphaere.
+              </p>
+              <div class="game-card-footer">
+                <div>
+                  <span class="game-price-label">Ab</span>
+                  <strong class="game-price">$51</strong>
+                </div>
+                <button class="buy-btn" type="button">Kaufen</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card-media">
+              <img
+                class="media-image"
+                src="./assets/images/little-nightmares-3840x2160-23002.jpg"
+                alt="Little Nightmares 2"
+              />
+            </div>
+            <div class="game-card-copy">
+              <div class="game-card-top">
+                <span class="game-tag">PS4</span>
+                <span class="game-meta">Horror</span>
+              </div>
+              <h2>Little Nightmares 2</h2>
+              <p>
+                Atmosphaerisches Abenteuer mit Raetseln, Spannung und einem
+                unverwechselbaren Stil.
+              </p>
+              <div class="game-card-footer">
+                <div>
+                  <span class="game-price-label">Ab</span>
+                  <strong class="game-price">$40</strong>
+                </div>
+                <button class="buy-btn" type="button">Kaufen</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card-media">
+              <img
+                class="media-image"
+                src="./assets/images/ghost-of-tsushima-3840x2160-12887.jpeg"
+                alt="Ghost of Tsushima"
+              />
+            </div>
+            <div class="game-card-copy">
+              <div class="game-card-top">
+                <span class="game-tag">PS4</span>
+                <span class="game-meta">Samurai</span>
+              </div>
+              <h2>Ghost of Tsushima</h2>
+              <p>
+                Elegante Schwertkaempfe, starke Bildwelten und eine ruhige,
+                epische Inszenierung.
+              </p>
+              <div class="game-card-footer">
+                <div>
+                  <span class="game-price-label">Ab</span>
+                  <strong class="game-price">$48</strong>
+                </div>
+                <button class="buy-btn" type="button">Kaufen</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card-media">
+              <img
+                class="media-image"
+                src="./assets/images/elle-blade-runner-3840x2160-19439.jpg"
+                alt="Cyber Runner 2077"
+              />
+            </div>
+            <div class="game-card-copy">
+              <div class="game-card-top">
+                <span class="game-tag">PC</span>
+                <span class="game-meta">RPG</span>
+              </div>
+              <h2>Cyber Runner 2077</h2>
+              <p>
+                Futuristische Metropole, Story-Missionen und Upgrade-Systeme
+                fuer lange Spielsessions.
+              </p>
+              <div class="game-card-footer">
+                <div>
+                  <span class="game-price-label">Ab</span>
+                  <strong class="game-price">$44</strong>
+                </div>
+                <button class="buy-btn" type="button">Kaufen</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card-media">
+              <img
+                class="media-image"
+                src="./assets/images/ea-sports-fc-25-3840x2160-17911.jpg"
+                alt="EA Sports FC"
+              />
+            </div>
+            <div class="game-card-copy">
+              <div class="game-card-top">
+                <span class="game-tag">Multi</span>
+                <span class="game-meta">Sport</span>
+              </div>
+              <h2>EA Sports FC</h2>
+              <p>
+                Wettkampf, Teamaufbau und schnelle Matches fuer Solo- und
+                Koop-Spieler.
+              </p>
+              <div class="game-card-footer">
+                <div>
+                  <span class="game-price-label">Ab</span>
+                  <strong class="game-price">$39</strong>
+                </div>
+                <button class="buy-btn" type="button">Kaufen</button>
+              </div>
+            </div>
+          </article>
+        </section>
       </section>
     </main>
   </body>
