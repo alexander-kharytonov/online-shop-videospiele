@@ -715,6 +715,105 @@ input:focus-visible {
   filter: brightness(1.1);
 }
 
+.contact-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 36px 20px;
+  padding: 30px;
+  background: var(--panel-bg-soft);
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: min(240px, 100%);
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent-strong), var(--accent-deep));
+  color: #24180f;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  margin-top: 8px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.contact-info h2 {
+  margin: 0 0 12px;
+  color: var(--text-main);
+  font-size: 1.3rem;
+}
+
+.contact-info p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.contact-info p strong {
+  color: var(--text-main);
+}
+
 @media (max-width: 1180px) {
   .layout {
     grid-template-columns: 1fr;
@@ -776,6 +875,15 @@ input:focus-visible {
 
   .news-card {
     padding: 18px;
+  }
+
+.contact-form-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .submit-btn {
+    width: 100%;
   }
 }
 
@@ -848,5 +956,15 @@ input:focus-visible {
     width: 36px;
     height: 36px;
     font-size: 0.9rem;
+  }
+  
+  .contact-form-container {
+    margin: 24px 10px;
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 14px;
   }
 }
