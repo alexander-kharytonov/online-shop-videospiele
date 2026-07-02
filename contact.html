@@ -12,6 +12,7 @@
     />
     <title>Online-Shop fuer Videospiele | Kontakt</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
   </head>
   <body>
     <main class="store-shell">
@@ -46,9 +47,42 @@
         <p class="page-kicker">Support</p>
         <h1>Kontakt</h1>
         <p>
-          Fragen zu Bestellungen, Spielen oder Plattformen koennen spaeter hier
-          gebuendelt werden.
+          Fragen zu Bestellungen, Spielen oder Plattformen.
         </p>
+      </section>
+
+      <section class="contact-form-container">
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Betreff</label>
+            <input type="text" id="subject" name="subject" placeholder="Betreff" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Deine Nachricht an uns..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Nachricht senden</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Kontaktinformationen</h2>
+          <p><strong>E-Mail:</strong> support@videospiel-shop.de</p>
+          <p><strong>Telefon:</strong> +49 (0) 00 12345678</p>
+          <p><strong>Adresse:</strong> Musterstraße 1, 12345 Musterstadt</p>
+          <p><strong>Öffnungszeiten:</strong> Mo-Fr 9:00 - 18:00 Uhr</p>
+        </div>
       </section>
     </main>
   </body>
