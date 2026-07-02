@@ -1,22 +1,149 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online-Shop für Videospiele | Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Online-Shop fuer Videospiele mit aktuellen Spielen, Filtern und Empfehlungen."
+    />
+    <title>Online-Shop fuer Videospiele | Startseite</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Online-Shop für Videospiele</h1>
+    <main class="store-shell">
+      <header class="topbar">
+        <nav class="nav" aria-label="Hauptnavigation">
+          <a class="active" href="./index.html">Startseite</a>
+          <a href="./news.html">Nachrichten</a>
+          <a href="./games.html">Spiele</a>
+          <a href="./contact.html">Kontakt</a>
+        </nav>
+
+        <div class="actions">
+          <button class="icon-btn" type="button" aria-label="Warenkorb">
+            &#128722;
+          </button>
+          <button class="icon-btn" type="button" aria-label="Favoriten">
+            &#9825;
+          </button>
+          <div class="avatar" aria-label="Profil">AK</div>
+        </div>
+      </header>
+
+      <section class="layout">
+        <aside class="sidebar">
+          <form class="filters" action="#">
+            <fieldset class="filter-group">
+              <legend>Kategorien</legend>
+              <div class="check-list">
+                <label class="check-item"><input type="checkbox" />Indie</label>
+                <label class="check-item"
+                  ><input type="checkbox" checked />Abenteuer</label
+                >
+                <label class="check-item"><input type="checkbox" />MMO</label>
+                <label class="check-item"
+                  ><input type="checkbox" />Casual-Spiel</label
+                >
+                <label class="check-item"
+                  ><input type="checkbox" checked />Strategie</label
+                >
+                <label class="check-item"
+                  ><input type="checkbox" />Simulation</label
+                >
+                <label class="check-item"
+                  ><input type="checkbox" />Sportspiel</label
+                >
+                <label class="check-item"
+                  ><input type="checkbox" />Actionspiel</label
+                >
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend>Plattformen</legend>
+              <div class="check-list">
+                <label class="check-item"><input type="checkbox" />PC</label>
+                <label class="check-item"
+                  ><input type="checkbox" checked />PlayStation 5</label
+                >
+                <label class="check-item"
+                  ><input type="checkbox" checked />PlayStation 4</label
+                >
+                <label class="check-item"
+                  ><input type="checkbox" />Xbox Series</label
+                >
+                <label class="check-item"
+                  ><input type="checkbox" />Nintendo Switch</label
+                >
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend>Preis</legend>
+              <div class="price-row">
+                <div class="price-box"><span>$</span>40</div>
+                <div class="dash">-</div>
+                <div class="price-box"><span>$</span>55</div>
+              </div>
+            </fieldset>
+
+            <button class="apply-btn" type="submit">Filter anwenden</button>
+          </form>
+
+          <nav class="socials" aria-label="Soziale Medien">
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Facebook">f</a>
+          </nav>
+        </aside>
+
+        <section class="content">
+          <article class="hero">
+            <div class="hero-copy">
+              <div class="eyebrow">Neu erschienen</div>
+              <h1>Horizon</h1>
+              <p>Forbidden West</p>
+            </div>
+          </article>
+
+          <section class="cards" aria-label="Empfohlene Spiele">
+            <article class="card">
+              <div class="card-media spiderman"></div>
+              <h2>Marvel's Spider-Man</h2>
+              <p class="platform">PS5</p>
+              <div class="card-footer">
+                <div class="price">$51</div>
+                <button class="buy-btn">Kaufen</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media nightmares"></div>
+              <h2>Little Nightmares 2</h2>
+              <p class="platform">PS4</p>
+              <div class="card-footer">
+                <div class="price">$40</div>
+                <button class="buy-btn">Kaufen</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media tsushima"></div>
+              <h2>Ghost of Tsushima</h2>
+              <p class="platform">PS4</p>
+              <div class="card-footer">
+                <div class="price">$48</div>
+                <button class="buy-btn">Kaufen</button>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
   </body>
-  <header>
-    <nav>
-      <ul>
-        <a href="./index.html">Home</a>
-        <a href="./games.html">Spiele</a>
-        <a href="./news.html">Nachrichten</a>
-        <a href="./contact.html">Kontakt</a>
-      </ul>
-    </nav>
-  </header>
 </html>
