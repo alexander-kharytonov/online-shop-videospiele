@@ -644,7 +644,6 @@ input:focus-visible {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
   margin: 36px 0;
-  padding: 0 20px;
 }
 
 .news-card {
@@ -719,7 +718,7 @@ input:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin: 36px 20px;
+  margin: 36px 0;
   padding: 30px;
   background: var(--panel-bg-soft);
   border: 1px solid var(--panel-border);
@@ -778,7 +777,9 @@ input:focus-visible {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
   margin-top: 8px;
 }
 
@@ -877,7 +878,7 @@ input:focus-visible {
     padding: 18px;
   }
 
-.contact-form-container {
+  .contact-form-container {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -957,10 +958,14 @@ input:focus-visible {
     height: 36px;
     font-size: 0.9rem;
   }
-  
+
   .contact-form-container {
-    margin: 24px 10px;
+    margin: 24px 0;
     padding: 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 1rem;
   }
 
   .form-group input,
