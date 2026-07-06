@@ -11,6 +11,7 @@
       content="Uebersicht der verfuegbaren Videospiele im Online-Shop."
     />
     <title>Online-Shop fuer Videospiele | Spiele</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -47,217 +48,47 @@
         </div>
       </header>
 
-      <section class="games-page">
-        <section class="games-hero">
-          <div class="games-hero-copy">
-            <p class="page-kicker">Sammlung</p>
-            <h1>Spiele fuer jeden Stil</h1>
-            <p class="games-lead">
+      <section class="grid gap-7">
+        <section class="grid gap-6 xl:grid-cols-[minmax(0,1.5fr)_minmax(280px,0.85fr)]">
+          <div class="rounded-[28px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] p-[38px] shadow-[0_24px_40px_rgba(0,0,0,0.16)] max-[640px]:px-[22px] max-[640px]:py-7">
+            <p class="text-[0.92rem] uppercase tracking-[0.22em] text-[color:var(--accent)]">Sammlung</p>
+            <h1 class="my-[10px] text-[clamp(2.6rem,5vw,4.4rem)] leading-[0.94]">Spiele fuer jeden Stil</h1>
+            <p class="max-w-[630px] text-[1.08rem] leading-[1.6] text-[color:var(--text-soft)]">
               Entdecke aktuelle Titel, Story-Abenteuer und Multiplayer-Hits in
               einer kuratierten Auswahl fuer Konsole und PC.
             </p>
           </div>
 
-          <div class="games-stats" aria-label="Shop-Statistiken">
-            <article class="stat-card">
-              <strong>126</strong>
-              <span>Verfuegbare Spiele</span>
-            </article>
-            <article class="stat-card">
-              <strong>24</strong>
-              <span>Neue Angebote</span>
-            </article>
-            <article class="stat-card">
-              <strong>4,8/5</strong>
-              <span>Community-Wertung</span>
-            </article>
+          <div class="grid gap-[14px] rounded-[28px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] p-6 shadow-[0_24px_40px_rgba(0,0,0,0.16)] max-[640px]:px-[22px] max-[640px]:py-[22px]" aria-label="Shop-Statistiken">
+            <article class="rounded-[20px] bg-white/3 px-[18px] py-[18px]"><strong class="block text-[1.75rem] text-[color:var(--accent-strong)]">126</strong><span class="mt-1.5 block text-[color:var(--text-soft)]">Verfuegbare Spiele</span></article>
+            <article class="rounded-[20px] bg-white/3 px-[18px] py-[18px]"><strong class="block text-[1.75rem] text-[color:var(--accent-strong)]">24</strong><span class="mt-1.5 block text-[color:var(--text-soft)]">Neue Angebote</span></article>
+            <article class="rounded-[20px] bg-white/3 px-[18px] py-[18px]"><strong class="block text-[1.75rem] text-[color:var(--accent-strong)]">4,8/5</strong><span class="mt-1.5 block text-[color:var(--text-soft)]">Community-Wertung</span></article>
           </div>
         </section>
 
-        <section class="game-toolbar" aria-label="Filter und Sortierung">
-          <div class="game-chips">
-            <button class="chip active" type="button">Alle</button>
-            <button class="chip" type="button">Action</button>
-            <button class="chip" type="button">Abenteuer</button>
-            <button class="chip" type="button">Strategie</button>
-            <button class="chip" type="button">PS5</button>
-            <button class="chip" type="button">PC</button>
+        <section class="flex items-center justify-between gap-[18px] rounded-3xl border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] px-[22px] py-[18px] shadow-[0_24px_40px_rgba(0,0,0,0.16)] max-[640px]:flex-col max-[640px]:items-start max-[640px]:px-[22px] max-[640px]:py-[22px]" aria-label="Filter und Sortierung">
+          <div class="flex flex-wrap gap-3">
+            <button class="rounded-full border border-[rgba(242,161,47,0.24)] bg-[rgba(242,161,47,0.14)] px-4 py-2.5 text-[0.92rem] text-[color:var(--text-main)]" type="button">Alle</button>
+            <button class="rounded-full border border-white/5 bg-white/3 px-4 py-2.5 text-[0.92rem] text-[color:var(--text-soft)] transition hover:border-[rgba(242,161,47,0.24)] hover:bg-[rgba(242,161,47,0.14)] hover:text-[color:var(--text-main)]" type="button">Action</button>
+            <button class="rounded-full border border-white/5 bg-white/3 px-4 py-2.5 text-[0.92rem] text-[color:var(--text-soft)] transition hover:border-[rgba(242,161,47,0.24)] hover:bg-[rgba(242,161,47,0.14)] hover:text-[color:var(--text-main)]" type="button">Abenteuer</button>
+            <button class="rounded-full border border-white/5 bg-white/3 px-4 py-2.5 text-[0.92rem] text-[color:var(--text-soft)] transition hover:border-[rgba(242,161,47,0.24)] hover:bg-[rgba(242,161,47,0.14)] hover:text-[color:var(--text-main)]" type="button">Strategie</button>
+            <button class="rounded-full border border-white/5 bg-white/3 px-4 py-2.5 text-[0.92rem] text-[color:var(--text-soft)] transition hover:border-[rgba(242,161,47,0.24)] hover:bg-[rgba(242,161,47,0.14)] hover:text-[color:var(--text-main)]" type="button">PS5</button>
+            <button class="rounded-full border border-white/5 bg-white/3 px-4 py-2.5 text-[0.92rem] text-[color:var(--text-soft)] transition hover:border-[rgba(242,161,47,0.24)] hover:bg-[rgba(242,161,47,0.14)] hover:text-[color:var(--text-main)]" type="button">PC</button>
           </div>
 
-          <div class="sort-box">
+          <div class="grid gap-1 text-right text-[color:var(--text-soft)] max-[640px]:text-left">
             <span>Sortieren nach</span>
-            <strong>Beliebtheit</strong>
+            <strong class="text-[color:var(--text-main)]">Beliebtheit</strong>
           </div>
         </section>
 
-        <section class="games-grid" aria-label="Spielekatalog">
-          <article class="game-card">
-            <div class="game-card-media">
-              <img
-                class="media-image"
-                src="./assets/images/horizon-zero-dawn-3840x2160-19141.jpg"
-                alt="Horizon Forbidden West"
-              />
-            </div>
-            <div class="game-card-copy">
-              <div class="game-card-top">
-                <span class="game-tag">PS5</span>
-                <span class="game-meta">Open World</span>
-              </div>
-              <h2>Horizon Forbidden West</h2>
-              <p>
-                Erkunde eine riesige Welt, sammle Ausruestung und stelle dich
-                mechanischen Kreaturen.
-              </p>
-              <div class="game-card-footer">
-                <div>
-                  <span class="game-price-label">Ab</span>
-                  <strong class="game-price">59 €</strong>
-                </div>
-                <button class="buy-btn" type="button">Kaufen</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <div class="game-card-media">
-              <img
-                class="media-image"
-                src="./assets/images/marvels-spider-man-3840x2160-11990.jpeg"
-                alt="Marvel's Spider-Man"
-              />
-            </div>
-            <div class="game-card-copy">
-              <div class="game-card-top">
-                <span class="game-tag">PS5</span>
-                <span class="game-meta">Action</span>
-              </div>
-              <h2>Marvel's Spider-Man</h2>
-              <p>
-                Schnelles Traversal, cineastische Kaempfe und eine dichte
-                Superhelden-Atmosphaere.
-              </p>
-              <div class="game-card-footer">
-                <div>
-                  <span class="game-price-label">Ab</span>
-                  <strong class="game-price">51 €</strong>
-                </div>
-                <button class="buy-btn" type="button">Kaufen</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <div class="game-card-media">
-              <img
-                class="media-image"
-                src="./assets/images/little-nightmares-3840x2160-23002.jpg"
-                alt="Little Nightmares 2"
-              />
-            </div>
-            <div class="game-card-copy">
-              <div class="game-card-top">
-                <span class="game-tag">PS4</span>
-                <span class="game-meta">Horror</span>
-              </div>
-              <h2>Little Nightmares 2</h2>
-              <p>
-                Atmosphaerisches Abenteuer mit Raetseln, Spannung und einem
-                unverwechselbaren Stil.
-              </p>
-              <div class="game-card-footer">
-                <div>
-                  <span class="game-price-label">Ab</span>
-                  <strong class="game-price">40 €</strong>
-                </div>
-                <button class="buy-btn" type="button">Kaufen</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <div class="game-card-media">
-              <img
-                class="media-image"
-                src="./assets/images/ghost-of-tsushima-3840x2160-12887.jpeg"
-                alt="Ghost of Tsushima"
-              />
-            </div>
-            <div class="game-card-copy">
-              <div class="game-card-top">
-                <span class="game-tag">PS4</span>
-                <span class="game-meta">Samurai</span>
-              </div>
-              <h2>Ghost of Tsushima</h2>
-              <p>
-                Elegante Schwertkaempfe, starke Bildwelten und eine ruhige,
-                epische Inszenierung.
-              </p>
-              <div class="game-card-footer">
-                <div>
-                  <span class="game-price-label">Ab</span>
-                  <strong class="game-price">48 €</strong>
-                </div>
-                <button class="buy-btn" type="button">Kaufen</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <div class="game-card-media">
-              <img
-                class="media-image"
-                src="./assets/images/elle-blade-runner-3840x2160-19439.jpg"
-                alt="Cyber Runner 2077"
-              />
-            </div>
-            <div class="game-card-copy">
-              <div class="game-card-top">
-                <span class="game-tag">PC</span>
-                <span class="game-meta">RPG</span>
-              </div>
-              <h2>Cyber Runner 2077</h2>
-              <p>
-                Futuristische Metropole, Story-Missionen und Upgrade-Systeme
-                fuer lange Spielsessions.
-              </p>
-              <div class="game-card-footer">
-                <div>
-                  <span class="game-price-label">Ab</span>
-                  <strong class="game-price">44 €</strong>
-                </div>
-                <button class="buy-btn" type="button">Kaufen</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <div class="game-card-media">
-              <img
-                class="media-image"
-                src="./assets/images/ea-sports-fc-25-3840x2160-17911.jpg"
-                alt="EA Sports FC"
-              />
-            </div>
-            <div class="game-card-copy">
-              <div class="game-card-top">
-                <span class="game-tag">Multi</span>
-                <span class="game-meta">Sport</span>
-              </div>
-              <h2>EA Sports FC</h2>
-              <p>
-                Wettkampf, Teamaufbau und schnelle Matches fuer Solo- und
-                Koop-Spieler.
-              </p>
-              <div class="game-card-footer">
-                <div>
-                  <span class="game-price-label">Ab</span>
-                  <strong class="game-price">39 €</strong>
-                </div>
-                <button class="buy-btn" type="button">Kaufen</button>
-              </div>
-            </div>
-          </article>
+        <section class="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6" aria-label="Spielekatalog">
+          <article class="overflow-hidden rounded-[26px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] shadow-[0_24px_40px_rgba(0,0,0,0.16)]"><div class="h-60 overflow-hidden"><img class="block h-full w-full object-cover object-center" src="./assets/images/horizon-zero-dawn-3840x2160-19141.jpg" alt="Horizon Forbidden West" /></div><div class="grid gap-4 p-[22px]"><div class="flex items-center justify-between gap-3 text-[0.92rem] text-[color:var(--text-soft)]"><span class="inline-flex items-center rounded-full bg-white/6 px-3 py-2 text-[color:var(--text-main)]">PS5</span><span>Open World</span></div><h2 class="m-0 text-[1.4rem]">Horizon Forbidden West</h2><p class="m-0 leading-[1.6] text-[color:var(--text-soft)]">Erkunde eine riesige Welt, sammle Ausruestung und stelle dich mechanischen Kreaturen.</p><div class="flex items-center justify-between gap-4"><div><span class="block text-[0.88rem] text-[color:var(--text-muted)]">Ab</span><strong class="mt-1 block text-[1.6rem] text-[color:var(--accent-strong)]">59 €</strong></div><button class="rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105" type="button">Kaufen</button></div></div></article>
+          <article class="overflow-hidden rounded-[26px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] shadow-[0_24px_40px_rgba(0,0,0,0.16)]"><div class="h-60 overflow-hidden"><img class="block h-full w-full object-cover object-center" src="./assets/images/marvels-spider-man-3840x2160-11990.jpeg" alt="Marvel's Spider-Man" /></div><div class="grid gap-4 p-[22px]"><div class="flex items-center justify-between gap-3 text-[0.92rem] text-[color:var(--text-soft)]"><span class="inline-flex items-center rounded-full bg-white/6 px-3 py-2 text-[color:var(--text-main)]">PS5</span><span>Action</span></div><h2 class="m-0 text-[1.4rem]">Marvel's Spider-Man</h2><p class="m-0 leading-[1.6] text-[color:var(--text-soft)]">Schnelles Traversal, cineastische Kaempfe und eine dichte Superhelden-Atmosphaere.</p><div class="flex items-center justify-between gap-4"><div><span class="block text-[0.88rem] text-[color:var(--text-muted)]">Ab</span><strong class="mt-1 block text-[1.6rem] text-[color:var(--accent-strong)]">51 €</strong></div><button class="rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105" type="button">Kaufen</button></div></div></article>
+          <article class="overflow-hidden rounded-[26px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] shadow-[0_24px_40px_rgba(0,0,0,0.16)]"><div class="h-60 overflow-hidden"><img class="block h-full w-full object-cover object-center" src="./assets/images/little-nightmares-3840x2160-23002.jpg" alt="Little Nightmares 2" /></div><div class="grid gap-4 p-[22px]"><div class="flex items-center justify-between gap-3 text-[0.92rem] text-[color:var(--text-soft)]"><span class="inline-flex items-center rounded-full bg-white/6 px-3 py-2 text-[color:var(--text-main)]">PS4</span><span>Horror</span></div><h2 class="m-0 text-[1.4rem]">Little Nightmares 2</h2><p class="m-0 leading-[1.6] text-[color:var(--text-soft)]">Atmosphaerisches Abenteuer mit Raetseln, Spannung und einem unverwechselbaren Stil.</p><div class="flex items-center justify-between gap-4"><div><span class="block text-[0.88rem] text-[color:var(--text-muted)]">Ab</span><strong class="mt-1 block text-[1.6rem] text-[color:var(--accent-strong)]">40 €</strong></div><button class="rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105" type="button">Kaufen</button></div></div></article>
+          <article class="overflow-hidden rounded-[26px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] shadow-[0_24px_40px_rgba(0,0,0,0.16)]"><div class="h-60 overflow-hidden"><img class="block h-full w-full object-cover object-center" src="./assets/images/ghost-of-tsushima-3840x2160-12887.jpeg" alt="Ghost of Tsushima" /></div><div class="grid gap-4 p-[22px]"><div class="flex items-center justify-between gap-3 text-[0.92rem] text-[color:var(--text-soft)]"><span class="inline-flex items-center rounded-full bg-white/6 px-3 py-2 text-[color:var(--text-main)]">PS4</span><span>Samurai</span></div><h2 class="m-0 text-[1.4rem]">Ghost of Tsushima</h2><p class="m-0 leading-[1.6] text-[color:var(--text-soft)]">Elegante Schwertkaempfe, starke Bildwelten und eine ruhige, epische Inszenierung.</p><div class="flex items-center justify-between gap-4"><div><span class="block text-[0.88rem] text-[color:var(--text-muted)]">Ab</span><strong class="mt-1 block text-[1.6rem] text-[color:var(--accent-strong)]">48 €</strong></div><button class="rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105" type="button">Kaufen</button></div></div></article>
+          <article class="overflow-hidden rounded-[26px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] shadow-[0_24px_40px_rgba(0,0,0,0.16)]"><div class="h-60 overflow-hidden"><img class="block h-full w-full object-cover object-center" src="./assets/images/elle-blade-runner-3840x2160-19439.jpg" alt="Cyber Runner 2077" /></div><div class="grid gap-4 p-[22px]"><div class="flex items-center justify-between gap-3 text-[0.92rem] text-[color:var(--text-soft)]"><span class="inline-flex items-center rounded-full bg-white/6 px-3 py-2 text-[color:var(--text-main)]">PC</span><span>RPG</span></div><h2 class="m-0 text-[1.4rem]">Cyber Runner 2077</h2><p class="m-0 leading-[1.6] text-[color:var(--text-soft)]">Futuristische Metropole, Story-Missionen und Upgrade-Systeme fuer lange Spielsessions.</p><div class="flex items-center justify-between gap-4"><div><span class="block text-[0.88rem] text-[color:var(--text-muted)]">Ab</span><strong class="mt-1 block text-[1.6rem] text-[color:var(--accent-strong)]">44 €</strong></div><button class="rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105" type="button">Kaufen</button></div></div></article>
+          <article class="overflow-hidden rounded-[26px] border border-white/5 bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))] shadow-[0_24px_40px_rgba(0,0,0,0.16)]"><div class="h-60 overflow-hidden"><img class="block h-full w-full object-cover object-center" src="./assets/images/ea-sports-fc-25-3840x2160-17911.jpg" alt="EA Sports FC" /></div><div class="grid gap-4 p-[22px]"><div class="flex items-center justify-between gap-3 text-[0.92rem] text-[color:var(--text-soft)]"><span class="inline-flex items-center rounded-full bg-white/6 px-3 py-2 text-[color:var(--text-main)]">Multi</span><span>Sport</span></div><h2 class="m-0 text-[1.4rem]">EA Sports FC</h2><p class="m-0 leading-[1.6] text-[color:var(--text-soft)]">Wettkampf, Teamaufbau und schnelle Matches fuer Solo- und Koop-Spieler.</p><div class="flex items-center justify-between gap-4"><div><span class="block text-[0.88rem] text-[color:var(--text-muted)]">Ab</span><strong class="mt-1 block text-[1.6rem] text-[color:var(--accent-strong)]">39 €</strong></div><button class="rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105" type="button">Kaufen</button></div></div></article>
         </section>
       </section>
     </main>
