@@ -11,13 +11,23 @@
       content="Online-Shop fuer Videospiele mit aktuellen Spielen, Filtern und Empfehlungen."
     />
     <title>Online-Shop fuer Videospiele | Startseite</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="store-shell">
       <header class="topbar">
-        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-hidden="true">
-        <label for="mobile-menu-toggle" class="mobile-menu-button" aria-label="Menü öffnen">
+        <input
+          type="checkbox"
+          id="mobile-menu-toggle"
+          class="mobile-menu-toggle"
+          aria-hidden="true"
+        />
+        <label
+          for="mobile-menu-toggle"
+          class="mobile-menu-button"
+          aria-label="Menü öffnen"
+        >
           <span class="hamburger"></span>
         </label>
 
@@ -47,158 +57,307 @@
         </div>
       </header>
 
-      <section class="layout">
-        <aside class="sidebar">
-          <form class="filters" action="#">
-            <fieldset class="filter-group">
-              <legend>Kategorien</legend>
-              <div class="check-list">
-                <label class="check-item"><input type="checkbox" />Indie</label>
-                <label class="check-item"
-                  ><input type="checkbox" checked />Abenteuer</label
+      <section
+        class="grid gap-9 md:grid-cols-[280px_minmax(0,1fr)] md:items-start"
+      >
+        <aside class="flex flex-col justify-between gap-7">
+          <form
+            class="rounded-3xl border border-white/5 bg-[linear-gradient(180deg,rgba(48,41,35,0.7),rgba(28,31,37,0.92))] px-6 py-7"
+            action="#"
+          >
+            <fieldset class="min-w-0 border-0 p-0">
+              <legend class="mb-4 font-bold">Kategorien</legend>
+              <div class="grid gap-3">
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />Indie</label
                 >
-                <label class="check-item"><input type="checkbox" />MMO</label>
-                <label class="check-item"
-                  ><input type="checkbox" />Casual-Spiel</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                    checked
+                  />Abenteuer</label
                 >
-                <label class="check-item"
-                  ><input type="checkbox" checked />Strategie</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />MMO</label
                 >
-                <label class="check-item"
-                  ><input type="checkbox" />Simulation</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />Casual-Spiel</label
                 >
-                <label class="check-item"
-                  ><input type="checkbox" />Sportspiel</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                    checked
+                  />Strategie</label
                 >
-                <label class="check-item"
-                  ><input type="checkbox" />Actionspiel</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />Simulation</label
+                >
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />Sportspiel</label
+                >
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />Actionspiel</label
                 >
               </div>
             </fieldset>
 
-            <fieldset class="filter-group">
-              <legend>Plattformen</legend>
-              <div class="check-list">
-                <label class="check-item"><input type="checkbox" />PC</label>
-                <label class="check-item"
-                  ><input type="checkbox" checked />PlayStation 5</label
+            <fieldset class="mt-7 min-w-0 border-0 p-0">
+              <legend class="mb-4 font-bold">Plattformen</legend>
+              <div class="grid gap-3">
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />PC</label
                 >
-                <label class="check-item"
-                  ><input type="checkbox" checked />PlayStation 4</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                    checked
+                  />PlayStation 5</label
                 >
-                <label class="check-item"
-                  ><input type="checkbox" />Xbox Series</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                    checked
+                  />PlayStation 4</label
                 >
-                <label class="check-item"
-                  ><input type="checkbox" />Nintendo Switch</label
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />Xbox Series</label
+                >
+                <label
+                  class="flex items-center gap-3 text-[color:var(--text-soft)]"
+                  ><input
+                    class="m-0 h-5 w-5 rounded-md accent-[color:var(--accent)]"
+                    type="checkbox"
+                  />Nintendo Switch</label
                 >
               </div>
             </fieldset>
 
-            <fieldset class="filter-group">
-              <legend>Preis</legend>
-              <div class="price-row">
-                <div class="price-box">40 <span>€</span></div>
-                <div class="dash">-</div>
-                <div class="price-box">55 <span>€</span></div>
+            <fieldset class="mt-7 min-w-0 border-0 p-0">
+              <legend class="mb-4 font-bold">Preis</legend>
+              <div
+                class="grid grid-cols-[1fr_auto_1fr] items-center gap-[10px] max-sm:grid-cols-1"
+              >
+                <div
+                  class="rounded-[14px] bg-white/5 px-[18px] py-4 text-center text-[color:var(--text-soft)]"
+                >
+                  40
+                  <span class="mr-1.5 text-[color:var(--text-muted)]">€</span>
+                </div>
+                <div class="text-[color:var(--text-muted)] max-sm:hidden">
+                  -
+                </div>
+                <div
+                  class="rounded-[14px] bg-white/5 px-[18px] py-4 text-center text-[color:var(--text-soft)]"
+                >
+                  55
+                  <span class="mr-1.5 text-[color:var(--text-muted)]">€</span>
+                </div>
               </div>
             </fieldset>
 
-            <button class="apply-btn" type="submit">Filter anwenden</button>
+            <button
+              class="mt-7 w-full rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-5 py-[18px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105"
+              type="submit"
+            >
+              Filter anwenden
+            </button>
           </form>
 
-          <nav class="socials" aria-label="Soziale Medien">
-            <a href="#" aria-label="X">
-              <img
-                class="social-icon"
+          <nav
+            class="flex justify-center gap-6 pl-1.5 lg:justify-start"
+            aria-label="Soziale Medien"
+          >
+            <a
+              class="grid place-items-center transition hover:-translate-y-px"
+              href="#"
+              aria-label="X"
+              ><img
+                class="h-6 w-6 object-contain brightness-0 saturate-100 invert-[80%] contrast-[87%]"
                 src="./assets/icons/twitter-svgrepo-com.svg"
                 alt=""
-              />
-            </a>
-            <a href="#" aria-label="Instagram">
-              <img
-                class="social-icon"
+            /></a>
+            <a
+              class="grid place-items-center transition hover:-translate-y-px"
+              href="#"
+              aria-label="Instagram"
+              ><img
+                class="h-6 w-6 object-contain brightness-0 saturate-100 invert-[80%] contrast-[87%]"
                 src="./assets/icons/instagram-svgrepo-com.svg"
                 alt=""
-              />
-            </a>
-            <a href="#" aria-label="YouTube">
-              <img
-                class="social-icon"
+            /></a>
+            <a
+              class="grid place-items-center transition hover:-translate-y-px"
+              href="#"
+              aria-label="YouTube"
+              ><img
+                class="h-6 w-6 object-contain brightness-0 saturate-100 invert-[80%] contrast-[87%]"
                 src="./assets/icons/youtube-svgrepo-com.svg"
                 alt=""
-              />
-            </a>
-            <a href="#" aria-label="Facebook">
-              <img
-                class="social-icon"
+            /></a>
+            <a
+              class="grid place-items-center transition hover:-translate-y-px"
+              href="#"
+              aria-label="Facebook"
+              ><img
+                class="h-6 w-6 object-contain brightness-0 saturate-100 invert-[80%] contrast-[87%]"
                 src="./assets/icons/facebook-svgrepo-com.svg"
                 alt=""
-              />
-            </a>
+            /></a>
           </nav>
         </aside>
 
-        <section class="content">
-          <article class="hero">
+        <section class="grid gap-7">
+          <article
+            class="relative min-h-[340px] overflow-hidden rounded-[26px] border border-white/5 bg-[linear-gradient(90deg,rgba(28,21,18,0.62)_0%,rgba(28,21,18,0.18)_48%,rgba(17,12,10,0.1)_100%)] max-[900px]:min-h-[300px]"
+          >
             <img
-              class="hero-image"
+              class="absolute inset-0 z-0 h-full w-full object-cover object-center"
               src="./assets/images/horizon-zero-dawn-3840x2160-19141.jpg"
               alt="Horizon Forbidden West"
             />
-            <div class="hero-copy">
-              <div class="eyebrow">Neu erschienen</div>
-              <h1>Horizon</h1>
-              <p>Forbidden West</p>
+            <div
+              class="absolute bottom-[46px] left-[42px] z-10 max-w-[420px] max-[640px]:right-6 max-[640px]:bottom-7 max-[640px]:left-6"
+            >
+              <div class="text-base uppercase tracking-[0.28em] text-white/85">
+                Neu erschienen
+              </div>
+              <h1
+                class="my-[10px] text-[clamp(2.9rem,5vw,4.8rem)] leading-[0.9] tracking-[0.04em]"
+              >
+                Horizon
+              </h1>
+              <p class="m-0 text-white/80">Forbidden West</p>
             </div>
           </article>
 
-          <section class="cards" aria-label="Empfohlene Spiele">
-            <article class="card">
-              <div class="card-media">
+          <section
+            class="grid gap-7 md:grid-cols-2 xl:grid-cols-3"
+            aria-label="Empfohlene Spiele"
+          >
+            <article
+              class="min-w-0 rounded-3xl border border-white/5 bg-[linear-gradient(180deg,rgba(43,46,53,0.98),rgba(35,37,43,0.98))] p-[18px] shadow-[0_24px_40px_rgba(0,0,0,0.18)]"
+            >
+              <div class="mb-4 h-[246px] overflow-hidden rounded-[18px]">
                 <img
-                  class="media-image"
+                  class="block h-full w-full object-cover object-center"
                   src="./assets/images/marvels-spider-man-3840x2160-11990.jpeg"
                   alt="Marvel's Spider-Man"
                 />
               </div>
-              <h2>Marvel's Spider-Man</h2>
-              <p class="platform">PS5</p>
-              <div class="card-footer">
-                <div class="price">51 €</div>
-                <button class="buy-btn" type="button">Kaufen</button>
+              <h2 class="m-0 text-[1.1rem]">Marvel's Spider-Man</h2>
+              <p class="mt-2 text-[color:var(--text-soft)]">PS5</p>
+              <div
+                class="mt-6 flex flex-wrap items-center justify-between gap-4 max-[640px]:flex-col max-[640px]:items-start"
+              >
+                <div
+                  class="text-[1.1rem] font-bold text-[color:var(--accent-strong)]"
+                >
+                  51 €
+                </div>
+                <button
+                  class="w-full flex-1 basis-[140px] rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105 max-[640px]:min-h-14 max-[640px]:w-full max-[640px]:flex-none"
+                  type="button"
+                >
+                  Kaufen
+                </button>
               </div>
             </article>
 
-            <article class="card">
-              <div class="card-media">
+            <article
+              class="min-w-0 rounded-3xl border border-white/5 bg-[linear-gradient(180deg,rgba(43,46,53,0.98),rgba(35,37,43,0.98))] p-[18px] shadow-[0_24px_40px_rgba(0,0,0,0.18)]"
+            >
+              <div class="mb-4 h-[246px] overflow-hidden rounded-[18px]">
                 <img
-                  class="media-image"
+                  class="block h-full w-full object-cover object-center"
                   src="./assets/images/little-nightmares-3840x2160-23002.jpg"
                   alt="Little Nightmares 2"
                 />
               </div>
-              <h2>Little Nightmares 2</h2>
-              <p class="platform">PS4</p>
-              <div class="card-footer">
-                <div class="price">40 €</div>
-                <button class="buy-btn" type="button">Kaufen</button>
+              <h2 class="m-0 text-[1.1rem]">Little Nightmares 2</h2>
+              <p class="mt-2 text-[color:var(--text-soft)]">PS4</p>
+              <div
+                class="mt-6 flex flex-wrap items-center justify-between gap-4 max-[640px]:flex-col max-[640px]:items-start"
+              >
+                <div
+                  class="text-[1.1rem] font-bold text-[color:var(--accent-strong)]"
+                >
+                  40 €
+                </div>
+                <button
+                  class="w-full flex-1 basis-[140px] rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105 max-[640px]:min-h-14 max-[640px]:w-full max-[640px]:flex-none"
+                  type="button"
+                >
+                  Kaufen
+                </button>
               </div>
             </article>
 
-            <article class="card">
-              <div class="card-media">
+            <article
+              class="min-w-0 rounded-3xl border border-white/5 bg-[linear-gradient(180deg,rgba(43,46,53,0.98),rgba(35,37,43,0.98))] p-[18px] shadow-[0_24px_40px_rgba(0,0,0,0.18)]"
+            >
+              <div class="mb-4 h-[246px] overflow-hidden rounded-[18px]">
                 <img
-                  class="media-image"
+                  class="block h-full w-full object-cover object-center"
                   src="./assets/images/ghost-of-tsushima-3840x2160-12887.jpeg"
                   alt="Ghost of Tsushima"
                 />
               </div>
-              <h2>Ghost of Tsushima</h2>
-              <p class="platform">PS4</p>
-              <div class="card-footer">
-                <div class="price">48 €</div>
-                <button class="buy-btn" type="button">Kaufen</button>
+              <h2 class="m-0 text-[1.1rem]">Ghost of Tsushima</h2>
+              <p class="mt-2 text-[color:var(--text-soft)]">PS4</p>
+              <div
+                class="mt-6 flex flex-wrap items-center justify-between gap-4 max-[640px]:flex-col max-[640px]:items-start"
+              >
+                <div
+                  class="text-[1.1rem] font-bold text-[color:var(--accent-strong)]"
+                >
+                  48 €
+                </div>
+                <button
+                  class="w-full flex-1 basis-[140px] rounded-full bg-gradient-to-b from-[color:var(--accent-strong)] to-[color:var(--accent-deep)] px-[22px] py-[14px] text-base font-bold text-[#24180f] transition hover:-translate-y-px hover:brightness-105 max-[640px]:min-h-14 max-[640px]:w-full max-[640px]:flex-none"
+                  type="button"
+                >
+                  Kaufen
+                </button>
               </div>
             </article>
           </section>
