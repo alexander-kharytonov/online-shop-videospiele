@@ -48,45 +48,45 @@
         </div>
       </header>
 
-      <section class="page-panel">
-        <p class="page-kicker">Support</p>
-        <h1>Kontakt</h1>
-        <p>
+      <section class="min-h-auto grid content-center gap-3 p-14 rounded-[26px] border border-[rgba(255,255,255,0.05)] bg-[radial-gradient(circle_at_bottom_right,rgba(159,72,34,0.14),transparent_24%),linear-gradient(180deg,rgba(30,33,39,0.98),rgba(24,27,33,0.98))]">
+        <p class="text-[#f2a12f] uppercase tracking-[0.22em] text-[0.92rem]">Support</p>
+        <h1 class="m-0 text-[clamp(2.4rem,5vw,4rem)]">Kontakt</h1>
+        <p class="m-0 max-w-full text-[rgba(255,255,255,0.64)] text-[1.04rem] leading-6">
           Fragen zu Bestellungen, Spielen oder Plattformen.
         </p>
       </section>
 
-      <section class="contact-form-container">
-        <form class="contact-form" action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required />
+      <section class="grid grid-cols-2 gap-10 my-9 p-[30px] bg-[rgba(43,46,53,0.98)] border border-[rgba(255,255,255,0.05)] rounded-[20px]">
+        <form class="flex flex-col gap-5" action="#" method="POST">
+          <div class="flex flex-col gap-2">
+            <label for="name" class="text-[#f5f3ef] text-[0.95rem] font-semibold">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required class="w-full p-[14px_16px] rounded-[12px] border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.04)] text-[#f5f3ef] font-inherit text-[1rem] transition-[border-color_0.2s_ease] focus:outline-none focus:border-[#f2a12f]" />
           </div>
 
-          <div class="form-group">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required />
+          <div class="flex flex-col gap-2">
+            <label for="email" class="text-[#f5f3ef] text-[0.95rem] font-semibold">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required class="w-full p-[14px_16px] rounded-[12px] border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.04)] text-[#f5f3ef] font-inherit text-[1rem] transition-[border-color_0.2s_ease] focus:outline-none focus:border-[#f2a12f]" />
           </div>
 
-          <div class="form-group">
-            <label for="subject">Betreff</label>
-            <input type="text" id="subject" name="subject" placeholder="Betreff" required />
+          <div class="flex flex-col gap-2">
+            <label for="subject" class="text-[#f5f3ef] text-[0.95rem] font-semibold">Betreff</label>
+            <input type="text" id="subject" name="subject" placeholder="Betreff" required class="w-full p-[14px_16px] rounded-[12px] border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.04)] text-[#f5f3ef] font-inherit text-[1rem] transition-[border-color_0.2s_ease] focus:outline-none focus:border-[#f2a12f]" />
           </div>
 
-          <div class="form-group">
-            <label for="message">Nachricht</label>
-            <textarea id="message" name="message" rows="6" placeholder="Deine Nachricht an uns..." required></textarea>
+          <div class="flex flex-col gap-2">
+            <label for="message" class="text-[#f5f3ef] text-[0.95rem] font-semibold">Nachricht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Deine Nachricht an uns..." required class="w-full p-[14px_16px] rounded-[12px] border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.04)] text-[#f5f3ef] font-inherit text-[1rem] transition-[border-color_0.2s_ease] focus:outline-none focus:border-[#f2a12f] resize-y min-h-[120px]"></textarea>
           </div>
 
-          <button type="submit" class="submit-btn">Nachricht senden</button>
+          <button type="submit" class="w-[min(240px,100%)] p-[16px_24px] border-0 rounded-[999px] bg-[linear-gradient(180deg,var(--accent-strong),var(--accent-deep))] text-[#24180f] text-[1rem] font-bold cursor-pointer transition-[transform_0.2s_ease,filter_0.2s_ease] mt-2 hover:translate-y-[-2px] hover:brightness-[1.05]">Nachricht senden</button>
         </form>
 
-        <div class="contact-info">
-          <h2>Kontaktinformationen</h2>
-          <p><strong>E-Mail:</strong> support@videospiel-shop.de</p>
-          <p><strong>Telefon:</strong> +49 (0) 00 12345678</p>
-          <p><strong>Adresse:</strong> Musterstraße 1, 12345 Musterstadt</p>
-          <p><strong>Öffnungszeiten:</strong> Mo-Fr 9:00 - 18:00 Uhr</p>
+        <div class="flex flex-col gap-4 p-5 bg-[rgba(255,255,255,0.03)] rounded-[16px] border border-[rgba(255,255,255,0.06)]">
+          <h2 class="m-0 mb-3 text-[#f5f3ef] text-[1.3rem]">Kontaktinformationen</h2>
+          <p class="m-0 text-[rgba(255,255,255,0.64)] text-[0.98rem] leading-6"><strong class="text-[#f5f3ef]">E-Mail:</strong> support@videospiel-shop.de</p>
+          <p class="m-0 text-[rgba(255,255,255,0.64)] text-[0.98rem] leading-6"><strong class="text-[#f5f3ef]">Telefon:</strong> +49 (0) 00 12345678</p>
+          <p class="m-0 text-[rgba(255,255,255,0.64)] text-[0.98rem] leading-6"><strong class="text-[#f5f3ef]">Adresse:</strong> Musterstraße 1, 12345 Musterstadt</p>
+          <p class="m-0 text-[rgba(255,255,255,0.64)] text-[0.98rem] leading-6"><strong class="text-[#f5f3ef]">Öffnungszeiten:</strong> Mo-Fr 9:00 - 18:00 Uhr</p>
         </div>
       </section>
     </main>
