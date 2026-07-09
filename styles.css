@@ -160,7 +160,9 @@ input:focus-visible {
   background-position:
     calc(100% - 22px) calc(50% - 3px),
     calc(100% - 16px) calc(50% - 3px);
-  background-size: 6px 6px, 6px 6px;
+  background-size:
+    6px 6px,
+    6px 6px;
   background-repeat: no-repeat;
 }
 
@@ -242,11 +244,7 @@ input:focus-visible {
   font-weight: 700;
   color: #24180f;
   cursor: pointer;
-  background: linear-gradient(
-    180deg,
-    var(--accent-strong),
-    var(--accent-deep)
-  );
+  background: linear-gradient(180deg, var(--accent-strong), var(--accent-deep));
   transition:
     transform 0.2s ease,
     filter 0.2s ease;
@@ -266,10 +264,6 @@ input:focus-visible {
 .hidden {
   display: none;
 }
-
-
-
-
 
 .mobile-menu-toggle {
   display: none;

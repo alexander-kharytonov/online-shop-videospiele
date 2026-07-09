@@ -8,7 +8,7 @@ const filterContent = {
     'Simulation',
   ],
   platforms: ['PC', 'PlayStation 5', 'PlayStation 4', 'Xbox Series'],
-};
+}
 
 const games = [
   {
@@ -65,7 +65,7 @@ const games = [
     popularity: 69,
     image: './assets/images/elle-blade-runner-3840x2160-19439.jpg',
   },
-];
+]
 
 const elements = {
   categoryFilters: document.querySelector('#category-filters'),
@@ -76,7 +76,7 @@ const elements = {
   resultsCount: document.querySelector('#results-count'),
   resetButton: document.querySelector('#reset-filters'),
   filtersForm: document.querySelector('#filters-form'),
-};
+}
 
 function createCheckbox(name, value) {
   return `
@@ -89,68 +89,68 @@ function createCheckbox(name, value) {
       />
       ${value}
     </label>
-  `;
+  `
 }
 
 function renderFilters() {
   elements.categoryFilters.innerHTML = filterContent.categories
     .map((category) => createCheckbox('category', category))
-    .join('');
+    .join('')
 
   elements.platformFilters.innerHTML = filterContent.platforms
     .map((platform) => createCheckbox('platform', platform))
-    .join('');
+    .join('')
 }
 
 function getSelectedValues(name) {
   return [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(
     (input) => input.value
-  );
+  )
 }
 
 function sortGames(items, sortValue) {
-  const sortedGames = [...items];
+  const sortedGames = [...items]
 
   if (sortValue === 'price-asc') {
-    return sortedGames.sort((a, b) => a.price - b.price);
+    return sortedGames.sort((a, b) => a.price - b.price)
   }
 
   if (sortValue === 'price-desc') {
-    return sortedGames.sort((a, b) => b.price - a.price);
+    return sortedGames.sort((a, b) => b.price - a.price)
   }
 
   if (sortValue === 'title-asc') {
-    return sortedGames.sort((a, b) => a.title.localeCompare(b.title));
+    return sortedGames.sort((a, b) => a.title.localeCompare(b.title))
   }
 
-  return sortedGames.sort((a, b) => b.popularity - a.popularity);
+  return sortedGames.sort((a, b) => b.popularity - a.popularity)
 }
 
 function filterGames() {
-  const selectedCategories = getSelectedValues('category');
-  const selectedPlatforms = getSelectedValues('platform');
-  const sortValue = elements.sortSelect.value;
+  const selectedCategories = getSelectedValues('category')
+  const selectedPlatforms = getSelectedValues('platform')
+  const sortValue = elements.sortSelect.value
 
   const filteredGames = games.filter((game) => {
     const categoryMatch =
       selectedCategories.length === 0 ||
-      selectedCategories.includes(game.category);
+      selectedCategories.includes(game.category)
     const platformMatch =
       selectedPlatforms.length === 0 ||
-      selectedPlatforms.includes(game.platform);
+      selectedPlatforms.includes(game.platform)
 
-    return categoryMatch && platformMatch;
-  });
+    return categoryMatch && platformMatch
+  })
 
-  return sortGames(filteredGames, sortValue);
+  return sortGames(filteredGames, sortValue)
 }
 
 function renderGames() {
-  const visibleGames = filterGames();
+  const visibleGames = filterGames()
 
-  elements.resultsCount.textContent = `Gefundene Spiele: ${visibleGames.length}`;
-  elements.noResults.classList.toggle('hidden', visibleGames.length > 0);
-  elements.gamesList.classList.toggle('hidden', visibleGames.length === 0);
+  elements.resultsCount.textContent = `Gefundene Spiele: ${visibleGames.length}`
+  elements.noResults.classList.toggle('hidden', visibleGames.length > 0)
+  elements.gamesList.classList.toggle('hidden', visibleGames.length === 0)
 
   elements.gamesList.innerHTML = visibleGames
     .map(
@@ -172,17 +172,17 @@ function renderGames() {
         </article>
       `
     )
-    .join('');
+    .join('')
 }
 
 function resetFilters() {
-  elements.filtersForm.reset();
-  renderGames();
+  elements.filtersForm.reset()
+  renderGames()
 }
 
-renderFilters();
-renderGames();
+renderFilters()
+renderGames()
 
-elements.filtersForm.addEventListener('change', renderGames);
-elements.sortSelect.addEventListener('change', renderGames);
-elements.resetButton.addEventListener('click', resetFilters);
+elements.filtersForm.addEventListener('change', renderGames)
+elements.sortSelect.addEventListener('change', renderGames)
+elements.resetButton.addEventListener('click', resetFilters)
